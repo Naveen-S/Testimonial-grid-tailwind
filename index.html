@@ -5,9 +5,227 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Tailwind Starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Testimonial Grid</title>
   </head>
-  <body>
-    <h1 class="text-3xl text-red-300">Tailwind is awesomeeee!</h1>
+  <body class="bg-gray-200">
+    <!-- GLobal Container -->
+    <div class="container mx-auto max-w-7xl p-2 md:p-10">
+      <div class="grid gap-6 grid-cols-1 md:grid-cols-4 md:grid-rows-2">
+        <!-- Box 1 -->
+        <div
+          class="relative p-10 rounded-xl bg-purple-700 text-white md:col-span-2"
+        >
+          <!-- Quotes Image -->
+          <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 rounded-full ring-2 ring-purple-300">
+              <img src="images/image-daniel.jpg" alt="" class="rounded-full" />
+            </div>
+            <img
+              src="images/bg-pattern-quotation.svg"
+              alt=""
+              class="absolute right-10 top-3 scale-125 md:top-7 md:right-24 md:scale-150"
+            />
+            <div class="flex flex-col">
+              <h3 class="text-md">Daniel Clifford</h3>
+              <p class="text-sm text-purple-300">Verified Graduate</p>
+            </div>
+          </div>
+          <div class="relative z-10">
+            <h3 class="text-xl my-4">
+              I received a job offer mid-course, and the subjects I learned were
+              current, if not, more so, in the company I joined. I honestly feel
+              I got every penny's worth.
+            </h3>
+            <p class="text-sm text-purple-300 line-clamp-6">
+              "I was an EMT for many years before I joined the bootcamp. Ive
+              been looking to make a transition and have heard some people who
+              had an amazing experience here. I signed up for the gree intro
+              course and founf it incredibly fun! I enrolled shortly thereafter.
+              The next qw weeks was the best- ans most grueling- time of my
+              life. Since completing the coursr, I've successfully switched
+              careers, working as a Software Engineer at a VR startup. Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              adipisci, laborum illum saepe quibusdam autem odit, earum
+              voluptatibus, corrupti soluta eveniet? Odio qui eligendi rem ipsum
+              officiis dignissimos veritatis cum deleniti velit quia doloribus
+              dolorum sit a, ad quo incidunt iste minus. Quod, ipsam hic beatae
+              quos voluptas praesentium dignissimos dicta animi dolores fuga
+              expedita nulla alias in harum eveniet aspernatur magni eligendi?
+              Dolore mollitia sapiente ratione officia natus ipsa quae tempora
+              dolores laborum inventore itaque libero voluptate aliquam quo
+              sequi tenetur nostrum quibusdam perspiciatis, molestias quod
+              debitis voluptates dolor ad doloremque? Error architecto dolore
+              rerum, nulla porro dolor impedit."
+            </p>
+          </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="p-10 rounded-xl bg-gray-600 text-white">
+          <!-- Quotes Image -->
+          <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 rounded-full ring-2 ring-white">
+              <img
+                src="images/image-jonathan.jpg"
+                alt=""
+                class="rounded-full"
+              />
+            </div>
+
+            <div class="flex flex-col">
+              <h3 class="text-md">Johnathan Walters</h3>
+              <p class="text-sm text-gray-300">Verified Graduate</p>
+            </div>
+          </div>
+          <div class="">
+            <h3 class="text-xl my-4">
+              I received a job offer mid-course, and the subjects.
+            </h3>
+            <p class="text-sm text-gray-300 line-clamp-5">
+              "I was an EMT for many years before I joined the bootcamp. Ive
+              been looking to make a transition and have heard some people who
+              had an amazing experience here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Possimus, error iure, dicta tempora
+              labore, in aut praesentium sint quo dolor repellendus eum eligendi
+              saepe deserunt omnis eaque molestiae? Magni incidunt pariatur
+              molestias quam nulla ex eius nisi id, recusandae natus eveniet
+              eligendi? Alias, facere pariatur. Totam architecto similique nisi
+              ducimus.."
+            </p>
+          </div>
+        </div>
+
+        <!-- Box 3 -->
+        <div
+          class="hidden p-10 rounded-xl bg-white text-gray-900 md:block md:row-span-2"
+        >
+          <!-- Quotes Image -->
+          <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 rounded-full ring-2 ring-white">
+              <img src="images/image-kira.jpg" alt="" class="rounded-full" />
+            </div>
+
+            <div class="flex flex-col">
+              <h3 class="text-md">Kira White</h3>
+              <p class="text-sm text-slate-900">Verified Graduate</p>
+            </div>
+          </div>
+          <div class="">
+            <h3 class="text-xl my-4">
+              I received a job offer mid-course, and the subjects.
+            </h3>
+            <p class="text-sm text-gray-900">
+              "I was an EMT for many years before I joined the bootcamp. Ive
+              been looking to make a transition and have heard some people who
+              had an amazing experience here. I was an EMT for many years before
+              I joined the bootcamp. Ive been looking to make a transition and
+              have heard some people who had an amazing experience here. I was
+              an EMT for many years before I joined the bootcamp. Ive been
+              looking to make a transition and have heard some people who had an
+              amazing experience here. I was an EMT for many years before I
+              joined the bootcamp. Ive been looking to make a transition and
+              have heard some people who had an amazing experience here. ."
+            </p>
+          </div>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="p-10 rounded-xl bg-white text-gray-900">
+          <!-- Quotes Image -->
+          <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 rounded-full ring-2 ring-white">
+              <img
+                src="images/image-jeanette.jpg"
+                alt=""
+                class="rounded-full"
+              />
+            </div>
+
+            <div class="flex flex-col">
+              <h3 class="text-md">Jeanette Harmon</h3>
+              <p class="text-sm text-gray-300">Verified Graduate</p>
+            </div>
+          </div>
+          <div class="">
+            <h3 class="text-xl my-4">
+              I received a job offer mid-course, and the subjects.
+            </h3>
+            <p class="text-sm text-gray-400">
+              "I was an EMT for many years before I joined the bootcamp. Ive
+              been looking to make a transition and have heard some people who
+              had an amazing experience here. ."
+            </p>
+          </div>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="p-10 rounded-xl bg-gray-900 text-white md:col-span-2">
+          <!-- Quotes Image -->
+          <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 rounded-full ring-2 ring-white">
+              <img src="images/image-patrick.jpg" alt="" class="rounded-full" />
+            </div>
+
+            <div class="flex flex-col">
+              <h3 class="text-md">Patrick Roberts</h3>
+              <p class="text-sm text-gray-300">Verified Graduate</p>
+            </div>
+          </div>
+          <div class="">
+            <h3 class="text-xl my-4">
+              I received a job offer mid-course, and the subjects.
+            </h3>
+            <p class="text-sm text-gray-400">
+              "I was an EMT for many years before I joined the bootcamp. Ive
+              been looking to make a transition and have heard some people who
+              had an amazing experience here. I was an EMT for many years before
+              I joined the bootcamp. Ive been looking to make a transition and
+              have heard some people who had an amazing experience here. I was
+              an EMT for many years before I joined the bootcamp. Ive been
+              looking to make a transition and have heard some people who had an
+              amazing experience here. ."
+            </p>
+          </div>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="p-10 rounded-xl bg-white text-gray-900 md:hidden">
+          <!-- Quotes Image -->
+          <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 rounded-full ring-2 ring-white">
+              <img src="images/image-kira.jpg" alt="" class="rounded-full" />
+            </div>
+
+            <div class="flex flex-col">
+              <h3 class="text-md">Kira White</h3>
+              <p class="text-sm text-slate-900">Verified Graduate</p>
+            </div>
+          </div>
+          <div class="">
+            <h3 class="text-xl my-4">
+              I received a job offer mid-course, and the subjects.
+            </h3>
+            <p class="text-sm text-gray-900">
+              "I was an EMT for many years before I joined the bootcamp. Ive
+              been looking to make a transition and have heard some people who
+              had an amazing experience here. I was an EMT for many years before
+              I joined the bootcamp. Ive been looking to make a transition and
+              have heard some people who had an amazing experience here. I was
+              an EMT for many years before I joined the bootcamp. Ive been
+              looking to make a transition and have heard some people who had an
+              amazing experience here. I was an EMT for many years before I
+              joined the bootcamp. Ive been looking to make a transition and
+              have heard some people who had an amazing experience here. ."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
