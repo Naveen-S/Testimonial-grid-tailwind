@@ -1,3 +1,3 @@
 # Testimonial-grid-tailwind
 
-testimonial-g.netlify.app
+https://testimonial-g.netlify.app/
